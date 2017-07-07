@@ -1,9 +1,9 @@
 {
-  "name": "react-material-ui-pagination",
+  "name": "material-ui-pagination-react",
   "version": "0.0.0",
   "description": "Pagination",
-  "main": "dist/react-material-ui-pagination.min.js",
-  "homepage": "https://github.com/bansalrachita/react-material-ui-pagination",
+  "main": "dist/material-ui-pagination-react.min.js",
+  "homepage": "https://github.com/bansalrachita/material-ui-pagination-react",
   "authors": [
     "Rachita Bansal"
   ],

@@ -147,7 +147,6 @@ class Pagination extends React.Component {
 		} = this.props;
 
 		const {pageEnd, selectedPage} = this.state;
-		console.log(this.state);
 		const menuItems = this.menuItems(rowSize);
 		const rowsSliced = (selectedRowSize * (selectedPage + 1)) >=
 		rows ? rows : (selectedRowSize * (selectedPage + 1));

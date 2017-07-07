@@ -1,16 +1,16 @@
 {
   "name": "material-ui-pagination-react",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "Pagination",
   "main": "lib/Pagination.js",
   "author": "Rachita Bansal",
-  "homepage": "https://github.com/bansalrachita/react-material-ui-pagination",
+  "homepage": "https://github.com/bansalrachita/material-ui-pagination-react",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bansalrachita/react-material-ui-pagination.git"
+    "url": "git+https://github.com/bansalrachita/material-ui-pagination-react.git"
   },
   "bugs": {
-    "url": "https://github.com/bansalrachita/react-material-ui-pagination/issues"
+    "url": "https://github.com/bansalrachita/material-ui-pagination-react/issues"
   },
   "dependencies": {
     "classnames": "^2.1.2",

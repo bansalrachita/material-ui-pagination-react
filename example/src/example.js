@@ -1,6 +1,6 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
-var Pagination = require('react-material-ui-pagination');
+var Pagination = require('material-ui-pagination-react');
 
 class App extends React.Component {
 	constructor(props) {

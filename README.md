@@ -7,7 +7,8 @@ component using ES6 syntax or require the component using commonJS syntax.
 
 ## Demo & Examples
 
-Live demo: [bansalrachita.github.io/react-material-ui-pagination](http://bansalrachita.github.io/react-material-ui-pagination/)
+Live demo: [bansalrachita.github.io/material-ui-pagination-react]
+(http://bansalrachita.github.io/material-ui-pagination-react/)
 
 To build the examples locally, run:
 
@@ -21,12 +22,15 @@ Then open [`localhost:8000`](http://localhost:8000) in a browser.
 
 ## Installation
 
-The easiest way to use react-material-ui-pagination is to install it from NPM and include it in your own React build process (using [Browserify](http://browserify.org), [Webpack](http://webpack.github.io/), etc).
+The easiest way to use material-ui-pagination-react is to install it from NPM 
+and include it in your own React build process (using [Browserify](http://browserify.org), [Webpack](http://webpack.github.io/), etc).
 
-You can also use the standalone build by including `dist/react-material-ui-pagination.js` in your page. If you use this, make sure you have already included React, and it is available as a global variable.
+You can also use the standalone build by including 
+`dist/material-ui-pagination-react.js` in your page. If you use this, make sure 
+you have already included React, and it is available as a global variable.
 
 ```
-npm install react-material-ui-pagination --save
+npm install material-ui-pagination-react --save
 ```
 
 
@@ -68,7 +72,7 @@ class App extends Component {
 OR
 
 ```
-var Pagination = require('react-material-ui-pagination');
+var Pagination = require('material-ui-pagination-react');
 
 <Pagination>Example</Pagination>
 ```
