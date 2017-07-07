@@ -13460,14 +13460,6 @@ Pagination.propTypes = {
 };
 
 exports["default"] = Pagination;
-
-// var Pagination = React.createClass({
-// 	render () {
-// 		return <div>Pagination</div>;
-// 	}
-// });
-//
-// export default Pagination;
 module.exports = exports["default"];
 
 },{"material-ui/IconButton":115,"material-ui/MenuItem":122,"material-ui/SelectField":129,"material-ui/svg-icons/navigation/chevron-left":154,"material-ui/svg-icons/navigation/chevron-right":155,"material-ui/svg-icons/navigation/first-page":158,"material-ui/svg-icons/navigation/last-page":159,"prop-types":170,"react":undefined}]},{},[]);
