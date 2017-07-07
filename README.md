@@ -1,6 +1,8 @@
 # Pagination
 
-__COMPONENT DESCRIPTION GOES HERE__
+This package creates a pagination component using React and material-ui
+design library. It provides for ES5 and ES6 support. You can import the 
+component using ES6 syntax or require the component using commonJS syntax.
 
 
 ## Demo & Examples
@@ -30,7 +32,40 @@ npm install react-material-ui-pagination --save
 
 ## Usage
 
-__EXPLAIN USAGE HERE__
+```js
+class App extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            selectedRowSize: 20
+        }
+    }
+
+    onChange = (event, index, selectedRowSize) => {
+        this.setState({selectedRowSize});
+    };
+
+    render() {
+        const {selectedRowSize} = this.state;
+
+        return (
+            <MuiThemeProvider>
+                <div className="App">
+                    <Pagination rows={10}
+                                rowSizeWidthStyle="10%"
+                                selectedRowSize={selectedRowSize}
+                                rowSize={[10, 20, 30]}
+                                handleRowSizeChange={this.onChange}/>
+                </div>
+            </MuiThemeProvider>
+        );
+    }
+}
+
+```
+
+OR
 
 ```
 var Pagination = require('react-material-ui-pagination');
@@ -40,11 +75,31 @@ var Pagination = require('react-material-ui-pagination');
 
 ### Properties
 
-* __DOCUMENT PROPERTIES HERE__
+* rowSize : [Optional]
 
-### Notes
+* selectedRowSize: [Optional] Numerical Value of the rowSize selection. By 
+default it is 10. Recommended to be specified by the user if using rowSize 
+property.
 
-__ADDITIONAL USAGE NOTES__
+* pageStart: [Optional] A numerical value for starting page. Default is 0.
+
+* rows: [Required] A numerical value of the number of rows to paginate.
+
+* rowSizeStyle: [Optional] 
+
+* handleRowSizeChange: [Optional] 
+
+* activePage: [Optional] A numerical value of the number of currently active 
+page.
+
+* handleOnSelectPrevious: [Optional] 
+
+* handleOnSelectNext:[Optional] 
+
+* handleOnSelectFirst: [Optional]
+
+* handleOnSelectLast: [Optional] 
+
 
 
 ## Development (`src`, `lib` and the build process)
@@ -55,7 +110,26 @@ To build, watch and serve the examples (which will also watch the component sour
 
 ## License
 
-__PUT LICENSE HERE__
+MIT License
 
-Copyright (c) 2017 Rachita Bansal.
+Copyright (c) 2017 Rachita Bansal
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
 
