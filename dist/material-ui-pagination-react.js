@@ -13359,7 +13359,6 @@ var Pagination = (function (_React$Component) {
 			var pageEnd = _state.pageEnd;
 			var selectedPage = _state.selectedPage;
 
-			console.log(this.state);
 			var menuItems = this.menuItems(rowSize);
 			var rowsSliced = selectedRowSize * (selectedPage + 1) >= rows ? rows : selectedRowSize * (selectedPage + 1);
 
@@ -13462,14 +13461,6 @@ Pagination.propTypes = {
 };
 
 exports["default"] = Pagination;
-
-// var Pagination = React.createClass({
-// 	render () {
-// 		return <div>Pagination</div>;
-// 	}
-// });
-//
-// export default Pagination;
 module.exports = exports["default"];
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
