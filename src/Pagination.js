@@ -72,8 +72,10 @@ class Pagination extends React.Component {
 	 * */
 	handleRowSizeChange(event, index, selectedRowSize) {
 		const {handleRowSizeChange} = this.props;
-
-		handleRowSizeChange(event, index, selectedRowSize);
+		
+		if (handleRowSizeChange) {
+			handleRowSizeChange(event, index, selectedRowSize);
+		}
 	};
 
 	/**
