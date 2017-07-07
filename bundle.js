@@ -1,4 +1,4 @@
-(function(f){if(typeof exports==="object"&&typeof module!=="undefined"){module.exports=f()}else if(typeof define==="function"&&define.amd){define([],f)}else{var g;if(typeof window!=="undefined"){g=window}else if(typeof global!=="undefined"){g=global}else if(typeof self!=="undefined"){g=self}else{g=this}g.Pagination = f()}})(function(){var define,module,exports;return (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 module.exports = { "default": require("core-js/library/fn/array/from"), __esModule: true };
 },{"core-js/library/fn/array/from":19}],2:[function(require,module,exports){
 module.exports = { "default": require("core-js/library/fn/object/assign"), __esModule: true };
@@ -13141,8 +13141,7 @@ if ("production" !== 'production') {
 
 module.exports = warning;
 
-},{}],195:[function(require,module,exports){
-(function (global){
+},{}],"material-ui-pagination-react":[function(require,module,exports){
 /**
  * Created by rachitabansal on 7/7/17.
  */
@@ -13198,7 +13197,7 @@ var _materialUiIconButton2 = _interopRequireDefault(_materialUiIconButton);
 /**
  * Displays component for Pagination.
  * */
-var React = (typeof window !== "undefined" ? window['React'] : typeof global !== "undefined" ? global['React'] : null);
+var React = require('react');
 
 var Pagination = (function (_React$Component) {
 	_inherits(Pagination, _React$Component);
@@ -13359,7 +13358,6 @@ var Pagination = (function (_React$Component) {
 			var pageEnd = _state.pageEnd;
 			var selectedPage = _state.selectedPage;
 
-			console.log(this.state);
 			var menuItems = this.menuItems(rowSize);
 			var rowsSliced = selectedRowSize * (selectedPage + 1) >= rows ? rows : selectedRowSize * (selectedPage + 1);
 
@@ -13472,6 +13470,4 @@ exports["default"] = Pagination;
 // export default Pagination;
 module.exports = exports["default"];
 
-}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"material-ui/IconButton":115,"material-ui/MenuItem":122,"material-ui/SelectField":129,"material-ui/svg-icons/navigation/chevron-left":154,"material-ui/svg-icons/navigation/chevron-right":155,"material-ui/svg-icons/navigation/first-page":158,"material-ui/svg-icons/navigation/last-page":159,"prop-types":170}]},{},[195])(195)
-});
+},{"material-ui/IconButton":115,"material-ui/MenuItem":122,"material-ui/SelectField":129,"material-ui/svg-icons/navigation/chevron-left":154,"material-ui/svg-icons/navigation/chevron-right":155,"material-ui/svg-icons/navigation/first-page":158,"material-ui/svg-icons/navigation/last-page":159,"prop-types":170,"react":undefined}]},{},[]);
