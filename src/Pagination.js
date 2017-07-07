@@ -235,10 +235,3 @@ Pagination.propTypes = {
 
 
 export default Pagination;
-// var Pagination = React.createClass({
-// 	render () {
-// 		return <div>Pagination</div>;
-// 	}
-// });
-//
-// export default Pagination;
