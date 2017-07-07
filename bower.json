@@ -1,0 +1,29 @@
+{
+  "name": "react-material-ui-pagination",
+  "version": "0.0.0",
+  "description": "Pagination",
+  "main": "dist/react-material-ui-pagination.min.js",
+  "homepage": "https://github.com/bansalrachita/react-material-ui-pagination",
+  "authors": [
+    "Rachita Bansal"
+  ],
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "react",
+    "react-component"
+  ],
+  "license": "MIT",
+  "ignore": [
+    ".editorconfig",
+    ".gitignore",
+    "package.json",
+    "src",
+    "node_modules",
+    "example",
+    "test"
+  ]
+}
