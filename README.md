@@ -7,8 +7,7 @@ component using ES6 syntax or require the component using commonJS syntax.
 
 ## Demo & Examples
 
-Live demo: [https://bansalrachita.github.io/react-material-ui-pagination.github.io/]
-(https://bansalrachita.github.io/react-material-ui-pagination.github.io/)
+[`Live demo`](https://bansalrachita.github.io/react-material-ui-pagination.github.io/)
 
 To build the examples locally, run:
 
